@@ -1,0 +1,40 @@
+
+.btn-main{
+    background:$color-primary;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    color: $color-background-secondary;
+    width: 200px;
+    padding: 16px 10px 16px 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15.5px;
+    margin: 15px 0px 50px 0px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s ;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    &:hover{
+        border-radius: 25px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3px);
+        background: radial-gradient(ellipse at top left, lighten($color-primary, 5) 100%, darken($color-secondary, 10) 0%);
+        &::after {
+            border-radius: 25px;
+            opacity: 1;
+          }
+    }
+    &::after {
+        border-radius: 25px;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: radial-gradient(ellipse at bottom right , lighten($color-primary, 5) 25%, darken($color-secondary, 10) 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.6s ease 0s;
+      }
+}

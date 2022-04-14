@@ -1,0 +1,219 @@
+.header{
+    @include shadow-secondary;
+}
+.home__main{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-background-secondary;
+    &__form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 7px 0px 7px 0px;
+        background-color: $color-form;
+        .localisation{
+            margin-right:15px;
+        }
+        .input{
+            background-color: $color-form;
+            border:none;
+            font-size: 14px;
+            width: 125px;
+            font-weight: 700;
+        }
+        &__btn{
+            margin: 20px auto 5px auto;
+        }
+    }
+    &__Reservation{
+        background-color: $color-background;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1,p{
+            text-align: center;
+        }
+        h1{
+            margin: 35px 50px 0px 50px;
+        }
+        p{
+            margin: 16px 30px 16px 30px;
+        }
+    }
+    &__Fonctionnement{
+        background-color: $color-background-secondary;
+        h1{
+            margin: 40px 0px 20px 15px;
+        }
+        ul{
+            list-style: none;
+            margin:0px;
+            padding:0px;
+        }
+        ul li{
+            background-color: $color-background;
+            margin:15px 25px 25px 25px;
+            padding:25px 0px 25px 0px;
+            border-radius: 20px;
+            @include shadow-primary;
+            .icone{
+                margin-right: 20px;
+                color: $color-fonctionnement-icone;
+            }
+            .span{
+                margin:0px 20px 0px -10px;
+                background-color: $color-primary;
+                border-radius: 50%;
+                color: $color-background-secondary;
+                padding: 0px 7px 3px 7px;
+            }
+            &:nth-child(3){
+                margin-bottom: 70px;
+            }
+            &:hover{
+                background-color: $color-fonctionnement-hover;     
+            }
+            &:hover .icone{
+                color: $color-primary;
+            }
+        }
+    }
+    &__Restaurants{
+        background-color:$color-background;
+        padding: 0px 18px 0px 18px;
+        h1{
+            padding: 25px 0px 0px 15px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 0px;
+            &--lien{
+                width:  100%;
+                height: 230px;
+                margin:0px auto 35px auto;
+                text-decoration: none;
+                padding: 0px;
+                color: black;
+                &:nth-child(4){
+                    margin-bottom: 80px;
+                }
+                .figure{
+                    width: 100%;
+                    height: 230px;
+                    margin: 0px;
+                    padding: 0px;
+                    .overlay{
+                        float: right;
+                        margin: 0px 10px -100px 0px;
+                        position: relative;
+                        p{
+                            background-color: $color-tertiary;
+                            padding: 8px 10px 8px 10px;
+                            border-radius: 3px;
+                            font-size: 14px;
+                            color: $color-overlay;
+                        }
+                    }
+                    .dimension{
+                        width: 100%;
+                        height:180px;
+                        margin: 0px;
+                        object-fit: cover;
+                        padding: 0px;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                    }
+                    .figcaption{
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        background-color: $color-background-secondary;
+                        padding: 15px 10px 15px 10px;
+                        margin-top: -5px;
+                        border-bottom-left-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                        @include shadow-primary;
+                        p{
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width:768px){
+    .home__main{
+        background-color: $color-background;
+        &__Fonctionnement{
+            width: 80%;
+            margin: 5px auto 15px auto;
+            border-radius: 20px;
+            @include shadow-primary;
+        }
+        &__Restaurants{
+            .container{
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+                &--lien{
+                    width:  48%;
+                    &:nth-child(4){
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(min-width:992px){
+    .home__main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: $color-background;
+        &__form{
+            width: 100%;
+            justify-content: flex-end;
+            .localisation{
+                width: 80%;
+            }
+            .input{
+                width: 250px;
+                margin-right: 41%;
+                font-size: 16px;
+            }
+        }
+        &__Restaurants{
+            font-size: 19px;
+            width: 100%;
+            margin-bottom: 30px;
+            .container{
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+                &--lien{
+                    width: 24%;
+                }
+            }
+        }
+        &__Reservation{
+            font-size: 19px;
+            width: 50%;
+        }
+        &__Fonctionnement{
+            font-size: 19px;
+            width: 40%;
+            margin: 25px auto 15px auto;
+            border-radius: 20px;
+            @include shadow-primary;
+            h1{
+                text-align: center;
+            }
+        }
+    }
+}

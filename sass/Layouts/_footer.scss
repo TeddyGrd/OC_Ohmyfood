@@ -1,0 +1,37 @@
+
+.footer{
+    background-color:$color-background-footer;
+    color: $color-background-secondary;
+    padding:5px 0px 20px 25px;
+    p{
+        font-family: 'Shrikhand';
+        font-size: 19px;
+        padding: 0px;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0px;
+    }
+    ul li{
+        margin: 0px 0px 10px 0px;
+        .icone{
+            margin: 0px 8px 0px 0px;
+            font-size: 13px;
+        }
+        .a{
+            text-decoration: none;
+            color: $color-background-secondary;
+        }
+    }
+}
+
+@media screen and(min-width:768px){
+    .footer{
+        text-align: center;
+    }
+}
+@media screen and (min-width:992px) {
+    .footer{
+        font-size: 20px;
+    }
+}
