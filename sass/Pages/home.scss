@@ -11,7 +11,7 @@
         justify-content: center;
         padding: 7px 0px 7px 0px;
         background-color: $color-form;
-        .localisation{
+        .location{
             margin-right:15px;
         }
         .input{
@@ -25,7 +25,7 @@
             margin: 20px auto 5px auto;
         }
     }
-    &__Reservation{
+    &__reservation{
         background-color: $color-background;
         display: flex;
         flex-direction: column;
@@ -40,7 +40,7 @@
             margin: 16px 30px 16px 30px;
         }
     }
-    &__Fonctionnement{
+    &__operation{
         background-color: $color-background-secondary;
         h1{
             margin: 40px 0px 20px 15px;
@@ -58,7 +58,7 @@
             @include shadow-primary;
             .icone{
                 margin-right: 20px;
-                color: $color-fonctionnement-icone;
+                color: $color-operation-icone;
             }
             .span{
                 margin:0px 20px 0px -10px;
@@ -71,14 +71,14 @@
                 margin-bottom: 70px;
             }
             &:hover{
-                background-color: $color-fonctionnement-hover;     
+                background-color: $color-operation-hover;     
             }
             &:hover .icone{
                 color: $color-primary;
             }
         }
     }
-    &__Restaurants{
+    &__restaurants{
         background-color:$color-background;
         padding: 0px 18px 0px 18px;
         h1{
@@ -165,13 +165,13 @@
 @media screen and(min-width:768px){
     .home__main{
         background-color: $color-background;
-        &__Fonctionnement{
+        &__operation{
             width: 80%;
             margin: 5px auto 15px auto;
             border-radius: 20px;
             @include shadow-primary;
         }
-        &__Restaurants{
+        &__restaurants{
             .container{
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -194,7 +194,7 @@
         &__form{
             width: 100%;
             justify-content: flex-end;
-            .localisation{
+            .location{
                 width: 80%;
             }
             .input{
@@ -203,7 +203,7 @@
                 font-size: 16px;
             }
         }
-        &__Restaurants{
+        &__restaurants{
             font-size: 19px;
             width: 100%;
             margin-bottom: 30px;
@@ -216,11 +216,11 @@
                 }
             }
         }
-        &__Reservation{
+        &__reservation{
             font-size: 19px;
             width: 50%;
         }
-        &__Fonctionnement{
+        &__operation{
             font-size: 19px;
             width: 40%;
             margin: 25px auto 15px auto;
