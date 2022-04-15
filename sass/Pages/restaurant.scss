@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     background-color: $color-background;
-    &__Presentation{
+    &__presentation{
         margin-bottom: 25px;
         &__figure{
             width: 100%;
@@ -35,7 +35,7 @@
                     overflow:hidden;
                     white-space: nowrap;
                 }
-                .conteneur__icone{
+                .container__icone{
                     margin: auto;
                     .icone{
                         font-size: 26px;                     
@@ -45,7 +45,7 @@
             }
         }
     }
-    &__entrees,&__plats,&__desserts{
+    &__starter,&__main-course,&__dessert{
         margin-top: 25px;
         &__title{
             margin: 0px 15px 10px 20px;
@@ -56,7 +56,7 @@
             font-size: 18px;
             padding-bottom: 3px;
         }
-        &__conteneur{
+        &__container{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -80,7 +80,7 @@
             &.delay4{
                 animation-delay: 0.8s;
             }
-            &:hover .restaurant__main__desserts__conteneur__3{
+            &:hover .restaurant__main__dessert__container__3{
                 transform: scaleX(1);
                 width: 75px;
                 transition: all 0.5s ease-in-out 0s;
@@ -159,7 +159,7 @@
     .restaurant__main{
         flex-direction: row;
         flex-wrap: wrap;
-        &__Presentation{
+        &__presentation{
             width: 100%;
             &__figure{
                 &__figcaption{
@@ -167,7 +167,7 @@
                         flex-grow: 1;
                         margin-left: 10%;
                     }
-                    .conteneur__icone{
+                    .container__icone{
                         width: 70px;
                         .fa-heart{
                             font-size: 35px;
@@ -176,11 +176,11 @@
                 }
             }
         }
-        &__entrees,&__plats{
+        &__starter,&__main-course{
             width: 45%;
             margin: 30px auto auto auto;
         }
-        &__desserts{
+        &__dessert{
             width: 60%;
             margin: 20px auto 20px auto;
         }
@@ -195,7 +195,7 @@
         flex-direction: row;
         flex-wrap: wrap;
 
-        &__Presentation{
+        &__presentation{
             width: 60%;
             order: 1;
             margin: 25px 25px 25px 25px;
@@ -216,7 +216,7 @@
                     &__h1{
                         margin: 20px auto 9px 20px ;
                     }
-                    .conteneur__icone{
+                    .container__icone{
                         margin: auto;
                         .icone{
                             margin: auto auto auto auto;
@@ -225,11 +225,11 @@
                 }  
             }
         }
-        &__entrees,&__plats,&__desserts{
+        &__starter,&__main-course,&__dessert{
             margin: 70px auto 60px auto;
             width: 30%;
             order: 3;
-            &__conteneur{
+            &__container{
                 margin: 25px 15px 25px 15px;
             }
         }

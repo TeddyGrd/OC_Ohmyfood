@@ -78,7 +78,7 @@
             }
         }
     }
-    &__restaurants{
+    &__restaurant{
         background-color:$color-background;
         padding: 0px 18px 0px 18px;
         h1{
@@ -89,7 +89,7 @@
             flex-direction: column;
             box-sizing: border-box;
             padding: 0px;
-            &--lien{
+            &--link{
                 width:  100%;
                 height: 230px;
                 margin:0px auto 35px auto;
@@ -171,12 +171,12 @@
             border-radius: 20px;
             @include shadow-primary;
         }
-        &__restaurants{
+        &__restaurant{
             .container{
                 flex-direction: row;
                 flex-wrap: wrap;
                 margin-bottom: 25px;
-                &--lien{
+                &--link{
                     width:  48%;
                     &:nth-child(4){
                         margin-bottom: 0px;
@@ -203,7 +203,7 @@
                 font-size: 16px;
             }
         }
-        &__restaurants{
+        &__restaurant{
             font-size: 19px;
             width: 100%;
             margin-bottom: 30px;
@@ -211,7 +211,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 margin-bottom: 25px;
-                &--lien{
+                &--link{
                     width: 24%;
                 }
             }
