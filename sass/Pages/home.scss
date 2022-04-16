@@ -162,6 +162,64 @@
     }
 }
 
+.loading-spinner{
+    width: 100%;
+    height: 100%;
+    background-color: $color-form;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation: duration 0s 2s both;
+    overflow: hidden;
+    .space_spinner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        flex-grow: 2;
+        &{
+            .spinner{
+                animation: loading infinite 2000ms linear;
+            }
+        }
+    }
+    .spinner{
+        width: 60px;
+        height: 60px;
+        border: 10px solid $color-primary;
+        border-left-color: $color-secondary;
+        border-right-color: $color-secondary ;
+        border-radius: 100%;
+        align-self: center;
+        margin: auto;        
+    }   
+}
+
+@keyframes duration {
+    0%{
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        width: 0%;
+        height: 0%;
+    }
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+
 @media screen and(min-width:768px){
     .home__main{
         background-color: $color-background;
