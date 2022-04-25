@@ -21,9 +21,6 @@
             width: 125px;
             font-weight: 700;
         }
-        &__btn{
-            margin: 20px auto 5px auto;
-        }
     }
     &__reservation{
         background-color: $color-background;
@@ -38,6 +35,21 @@
         }
         p{
             margin: 16px 30px 16px 30px;
+        }
+        a{
+            margin: 35px auto 55px auto;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            text-decoration: none;
+            .btn, .btn-main{
+                margin: 0px;
+                text-align: center;
+                width: 180px;
+            }
+        }
+        &__btn{
+            border-radius: 25px;
         }
     }
     &__operation{
