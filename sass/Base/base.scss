@@ -2,6 +2,9 @@ body, html{
     margin:0px;
     padding:0px;
 }
+html{
+    scroll-behavior: smooth;
+}
 @media screen and(min-width:1600px){
     body {
         width: 1600px;
