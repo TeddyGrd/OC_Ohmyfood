@@ -18,7 +18,13 @@
         }
     }
     .visible{
-        color: $color-background-secondary;
+        background-image: radial-gradient(ellipse at bottom right , lighten($color-primary, 5) 25%, darken($color-secondary, 10) 100%);;
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
         opacity: 0;
         transition: all 0.4s ease-in-out;                           
         &:hover{
